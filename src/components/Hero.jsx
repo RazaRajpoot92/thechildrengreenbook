@@ -26,7 +26,7 @@ useEffect(()=>{
 
     }
   return (
-    <div style={bgstyle} className='w-[90vw] h-[70vh] lg:w-[70vw]  rounded-lg m-auto mt-6 '>
+    <div style={bgstyle} className='w-[100vw] h-[70vh] md:w-[90vw] lg:w-[70vw]  rounded-lg m-auto mt-6 '>
       heroh1
 
 
