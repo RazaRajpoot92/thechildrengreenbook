@@ -29,10 +29,10 @@ const Nav = () => {
 
 
         <ul className=''>
-            <li className=' hover:bg-green-200 h-10 flex justify-center items-center '><Link className='text-lg   text-green-600 font-semibold'  >Home</Link></li>
-            <li className=' hover:bg-green-200 h-10 flex justify-center items-center ' ><Link className='text-lg  text-green-600 font-semibold' >Books</Link></li>
-            <li className=' hover:bg-green-200 h-10 flex justify-center items-center '><Link className='text-lg  text-green-600 font-semibold' >About Us</Link></li>
-            <li className=' hover:bg-green-200 h-10 flex justify-center items-center '><Link className='text-lg  text-green-600 font-semibold' >Review</Link></li>
+            <li className=' hover:bg-green-200 h-10 flex justify-center items-center '><Link onClick={()=>setMenu(!menuBtn)} to={"/"} className='text-lg   text-green-600 font-semibold'  >Home</Link></li>
+            <li className=' hover:bg-green-200 h-10 flex justify-center items-center ' ><Link onClick={()=>setMenu(!menuBtn)} to={"/books"} className='text-lg  text-green-600 font-semibold' >Books</Link></li>
+            <li className=' hover:bg-green-200 h-10 flex justify-center items-center '><Link onClick={()=>setMenu(!menuBtn)} className='text-lg  text-green-600 font-semibold' >About Us</Link></li>
+            <li className=' hover:bg-green-200 h-10 flex justify-center items-center '><Link onClick={()=>setMenu(!menuBtn)} className='text-lg  text-green-600 font-semibold' >Review</Link></li>
         </ul>
 
         <div className='flex flex-col  gap-4'>
@@ -57,7 +57,7 @@ const Nav = () => {
         <div className='hidden md:block'>
             <ul className='flex gap-3 lg:gap-7 '>
                 <li><Link className='text-lg hover:text-orange-300 text-green-600 font-semibold' to={"/"} >Home</Link></li>
-                <li><Link className='text-lg hover:text-orange-300 text-green-600 font-semibold' to={"/"} >Books</Link></li>
+                <li><Link className='text-lg hover:text-orange-300 text-green-600 font-semibold' to={"/books"} >Books</Link></li>
                 <li><Link className='text-lg hover:text-orange-300 text-green-600 font-semibold' to={"/"} >About Us</Link></li>
                 <li><Link className='text-lg hover:text-orange-300 text-green-600 font-semibold' to={"/"} >Review</Link></li>
             </ul>
