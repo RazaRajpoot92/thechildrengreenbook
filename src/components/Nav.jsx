@@ -37,18 +37,15 @@ const Nav = () => {
 
         <div className='flex flex-col  gap-4'>
 
-        <Link className='border-[1px] transition border-green-500 hover:bg-transparent hover:text-green-500 mx-2 text-white py-2 px-3 rounded-md bg-green-500'>SignUp</Link>
-        <Link className='border-[1px] py-2 border-green-500 text-white hover:bg-transparent hover:text-green-500 mx-2  px-3 rounded-md bg-green-500' >Login</Link>
+        <Link className='border-[1px] ease-in duration-200 border-green-500 hover:bg-transparent hover:text-green-500 mx-2 text-white py-2 px-3 rounded-md bg-green-500'>SignUp</Link>
+        <Link className='border-[1px] ease-in duration-200 py-2 border-green-500 text-white hover:bg-transparent hover:text-green-500 mx-2  px-3 rounded-md bg-green-500' >Login</Link>
 
         </div>
     </nav>
 
-
-
-
   return (
     <>
-    <nav className='w-full h-20 items-center flex justify-between px-5 lg:px-20 bg-green-100 '>
+    <nav className='w-full h-20 sticky top-0 z-50 shadow-inner	items-center flex justify-between px-5 lg:px-20 bg-green-200 '>
 
         <div>
 
@@ -67,8 +64,8 @@ const Nav = () => {
         </div>
 
         <div className='hidden md:block'>
-            <Link className='border-[1px] transition border-green-500 hover:bg-transparent hover:text-green-500 mx-2 text-white py-2 px-3 rounded-md bg-green-500'>SignUp</Link>
-            <Link className='border-[1px] py-2 border-green-500 text-white hover:bg-transparent hover:text-green-500  px-3 rounded-md bg-green-500' >Login</Link>
+            <Link className='border-[1px] ease-in duration-200 transition border-green-500 hover:bg-transparent hover:text-green-500 mx-2 text-white py-2 px-3 rounded-md bg-green-500'>SignUp</Link>
+            <Link className='border-[1px] ease-in duration-200 py-2 border-green-500 text-white hover:bg-transparent hover:text-green-500  px-3 rounded-md bg-green-500' >Login</Link>
         </div>
 
         <div className='md:hidden'>
