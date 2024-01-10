@@ -5,5 +5,5 @@
 body{
     background-color: rgba(224, 252, 225, 0.308);
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }

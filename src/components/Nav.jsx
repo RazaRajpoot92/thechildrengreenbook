@@ -14,7 +14,7 @@ const Nav = () => {
     }
 
     const mobMenu =
-    <nav className='sm:w-60 md:hidden w-full flex gap-20  flex-col text-center py-2 h-dvh fixed rounded bg-green-100 z-50 top-0 right-0 transition-all border-red-500'>
+    <nav className='sm:w-60 sm:rounded-br-none  md:hidden w-full flex gap-20  flex-col text-center py-2 h-dvh fixed rounded bg-green-100 z-50 top-0 right-0 transition-all border-red-500'>
 
 
 
@@ -32,7 +32,7 @@ const Nav = () => {
             <li className=' hover:bg-green-200 h-10 flex justify-center items-center '><Link onClick={()=>setMenu(!menuBtn)} to={"/"} className='text-lg   text-green-600 font-semibold'  >Home</Link></li>
             <li className=' hover:bg-green-200 h-10 flex justify-center items-center ' ><Link onClick={()=>setMenu(!menuBtn)} to={"/books"} className='text-lg  text-green-600 font-semibold' >Books</Link></li>
             <li className=' hover:bg-green-200 h-10 flex justify-center items-center '><Link onClick={()=>setMenu(!menuBtn)} to={"/about"} className='text-lg  text-green-600 font-semibold' >About Us</Link></li>
-            <li className=' hover:bg-green-200 h-10 flex justify-center items-center '><Link onClick={()=>setMenu(!menuBtn)} className='text-lg  text-green-600 font-semibold' >Review</Link></li>
+            <li className=' hover:bg-green-200 h-10 flex justify-center items-center '><Link onClick={()=>setMenu(!menuBtn)} to={"/reviews"} className='text-lg  text-green-600 font-semibold' >Review</Link></li>
         </ul>
 
         <div className='flex flex-col  gap-4'>
@@ -59,7 +59,7 @@ const Nav = () => {
                 <li><Link className='text-lg hover:text-orange-300 text-green-600 font-semibold' to={"/"} >Home</Link></li>
                 <li><Link className='text-lg hover:text-orange-300 text-green-600 font-semibold' to={"/books"} >Books</Link></li>
                 <li><Link className='text-lg hover:text-orange-300 text-green-600 font-semibold' to={"/about"} >About Us</Link></li>
-                <li><Link className='text-lg hover:text-orange-300 text-green-600 font-semibold' to={"/"} >Review</Link></li>
+                <li><Link className='text-lg hover:text-orange-300 text-green-600 font-semibold' to={"/reviews"} >Review</Link></li>
             </ul>
         </div>
 

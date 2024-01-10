@@ -1,4 +1,3 @@
-
 .anim{
 
     animation: imgUp 0.7s linear infinite alternate;
@@ -8,5 +7,17 @@
 @keyframes imgUp{
     to{
         transform: translateY(-10px);
+    }
+}
+
+.animl{
+
+    animation: imgUpl 1s linear infinite alternate;
+
+    }
+
+@keyframes imgUpl{
+    to{
+        transform: translateX(-10px);
     }
 }

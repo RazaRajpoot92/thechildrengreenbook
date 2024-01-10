@@ -12,10 +12,10 @@ const AboutSec = () => {
             <p className='mt-20 text-gray-700'>Climate change is one of the most urgent issues of our day. Several recent studies show that acting quickly and decisively to address this challenge and shift our economy to clean energy will bring significant benefits to the United States—while also helping us avoid some of the worst consequences of unchecked global warming.</p>
         </div>
         <div className='flex flex-col lg:flex-col md:flex-row gap-5'>
-            <img src={globalPic} className=' w-full lg:w-[500px] md:w-[300px] rounded-3xl' alt="" />
-            <div className=' w-full lg:w-[500px] md:w-[300px] flex flex-col justify-around	p-4 rounded-3xl border-2 h-[200px]'>
-                <h1 className='text-green-600 text-xl font-semibold'>COLLABORATION WITH UNESCO</h1>
-                <p className='text-gray-700'>Since amongst other objectives, the UNESCO also aims to help Member States to mitigate and adapt to Climate Change and achieve the relevant SDGs, its collaboration is being sought. </p>
+            <img src={globalPic} className=' w-full shadow-xl lg:w-[500px] md:w-[300px] rounded-3xl' alt="" />
+            <div className=' w-full shadow-xl lg:w-[500px] md:w-[300px] flex flex-col justify-around	p-4 rounded-3xl border-2 h-[200px]'>
+                <h1 className='text-green-600 md:text-xl font-semibold'>COLLABORATION WITH UNESCO</h1>
+                <p className='text-gray-700 text-sm md:text-base'>Since amongst other objectives, the UNESCO also aims to help Member States to mitigate and adapt to Climate Change and achieve the relevant SDGs, its collaboration is being sought. </p>
             </div>
         </div>
     </div>
