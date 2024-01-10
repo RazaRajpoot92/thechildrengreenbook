@@ -49,19 +49,19 @@ const LogSignForm = () => {
   return (
     <div className='w-full h-[80vh] flex justify-center items-center'>
 
-        <div style={bgstyle} className= ' w-[95vw] xl:w-[60vw] flex gap-3 h-[550px] rounded-xl shadow-md p-5'>
+        <div style={bgstyle} className= ' w-[95vw] xl:w-[80vw] 2xl:w-[60vw] flex justify-center items-center  flex-col md:flex-row  gap-3 min-h-[430px] rounded-xl shadow-md p-5'>
 
-            <div className='w-[45%] relative flex flex-col justify-center items-center gap-5'>
+            <div className=' w-[80%] md:w-[45%] min-h-[385px] relative flex flex-col justify-center items-center gap-5'>
 
                 <h1 className=' text-3xl xl:text-5xl  font-semibold text-green-600'>
                     {isVisible?"Hello, Friend!":"Welcome Back!"}
                 </h1>
 
-                <div className='text-gray-500 text-md xl:text-xl p-4'>
+                <div className='text-gray-500 text-md xl:text-xl p-2'>
                     {
 
                         isVisible?(<p>Welcome to The GreenBook, the website that connects you with your next favorite book. Enter your personal details and start your journey</p>):(
-                            <p>To keep connecting with us, please login with your personal info</p>
+                            <p>To keep connecting with us, please login with your personal info and explore your favourite book collection.</p>
                         )
 
                     }
@@ -76,12 +76,12 @@ const LogSignForm = () => {
                     bottom: 0,
                     left: -50,
                     }
-                } src={logo} className='w-[170px] absolute  bottom-0	' alt="" />
+                } src={logo} className='w-[170px]  absolute bottom-0' alt="" />
             </div>
 
 
 
-            <div  className='w-[55%] p-5 border-2 border-green-300 rounded-2xl shadow-md'>
+            <div  className='w-[55%] p-2 min-h-[385px] border-2 border-green-300 rounded-2xl shadow-md'>
 
                 <motion.div animate={isVisible? show:hide} className='w-full flex justify-center items-center'>
                     <SignUp/>
