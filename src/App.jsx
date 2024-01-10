@@ -6,6 +6,7 @@ import Books from "./pages/Books"
 import AboutUs from "./pages/AboutUs"
 import OrderForm from "./components/OrderForm"
 import Reivews from "./pages/Reivews"
+import LogSignForm from "./components/LogSignForm"
 function App() {
 
   return (
@@ -19,8 +20,9 @@ function App() {
         <Route path={"/about"} element={<AboutUs/>}/>
         <Route path={"/orderbook"} element={<OrderForm/>}/>
         <Route path={"/reviews"} element={<Reivews/>}/>
+        <Route path={"/signuplogin"} element={<LogSignForm/>}/>
       </Routes>
-    
+
     <Footer />
     </Router>
 
