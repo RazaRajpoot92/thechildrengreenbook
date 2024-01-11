@@ -47,9 +47,9 @@ const LogSignForm = () => {
       };
 
   return (
-    <div className='w-full h-[80vh] flex justify-center items-center'>
+    <div className='w-full p-5 min-h-[80vh] flex justify-center items-center'>
 
-        <div style={bgstyle} className= ' w-[95vw] xl:w-[80vw] 2xl:w-[60vw] flex justify-center items-center  flex-col md:flex-row  gap-3 min-h-[430px] rounded-xl shadow-md p-5'>
+        <div style={bgstyle} className= ' w-[95vw] xl:w-[80vw] 2xl:w-[60vw] flex justify-center items-center  flex-col md:flex-row  gap-3 min-h-[490px] rounded-xl shadow-md p-5'>
 
             <div className=' w-[80%] md:w-[45%] min-h-[385px] relative flex flex-col justify-center items-center gap-5'>
 
@@ -71,17 +71,17 @@ const LogSignForm = () => {
 
                 <motion.img whileHover={{scale:1.1}} drag dragConstraints={
                     {
-                    top: -50,
-                    right: 50,
+                    top: -10,
+                    right: 10,
                     bottom: 0,
-                    left: -50,
+                    left: -10,
                     }
                 } src={logo} className='w-[170px]  absolute bottom-0' alt="" />
             </div>
 
 
 
-            <div  className='w-[55%] p-2 min-h-[385px] border-2 border-green-300 rounded-2xl shadow-md'>
+            <div  className='w-[55%] p-2 min-h-[470px] border-2 border-green-300 rounded-2xl shadow-md'>
 
                 <motion.div animate={isVisible? show:hide} className='w-full flex justify-center items-center'>
                     <SignUp/>
